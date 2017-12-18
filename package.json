@@ -1,0 +1,19 @@
+{
+  "name": "koa-rust-router",
+  "version": "0.1.0",
+  "description": "koa router written in rust.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moldray/koa-rust-router.git"
+  },
+  "author": "moldray <leids@foxmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.1.22"
+  },
+  "scripts": {
+    "dev": "cd native && cargo watch -w './src' -s 'npm run build && node ../'",
+    "build": "neon build"
+  }
+}
